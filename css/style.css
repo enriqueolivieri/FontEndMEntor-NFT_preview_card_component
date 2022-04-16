@@ -6,12 +6,11 @@
 body{
     background: hsl(217, 54%, 11%);
     color: white;    
-    height: 100vh;
-    width: 100%;    
-    /*padding-top: 50px;*/
+    /*height: 100vh;*/
+    min-height: 100vh;
+    width: 100%;        
     display: flex; 
-    flex-direction: column;
-    /*align-items: center;*/
+    flex-direction: column;    
     justify-content: center;
 }
 
@@ -19,17 +18,14 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
-    font-family: 'Outfit', sans-serif;    
-    
+    font-family: 'Outfit', sans-serif;        
 }
 
 .card{
     background:  hsl(216, 50%, 16%);
     border-radius: 15px;
     width: 300px;
-    padding: 15px;    
-    /*align-items: center;*/
-    /*box-shadow: 10px 10px 25px #888;*/        
+    padding: 15px;        
 }
 
 .main-img{
@@ -39,10 +35,15 @@ body{
     cursor: pointer;
 }
 
-h2{
+h2 a{    
+    color: white;
+    text-decoration: none;
     margin-top: 10px;
-    font-weight: 600;
-    cursor: pointer;
+    font-weight: 600;    
+}
+
+h2 a:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 .desc{
@@ -104,13 +105,13 @@ h2{
     margin-right: 5px;
 }
 
-.name{
-    cursor: pointer;
+.name a{    
+    color: white;
+    text-decoration: none;
 }
 
-h2:hover,
-.name:hover{
-    color: hsl(178, 100%, 50%);    
+.name a:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 .img{
@@ -138,9 +139,3 @@ h2:hover,
     cursor: pointer;
     border-radius: 15px;
 }
-
-/*.hr-line{
-    border: 1px solid hsl(215, 51%, 70%);    
-    margin-top: 15px;
-    margin-bottom: 15px;
-}*/
